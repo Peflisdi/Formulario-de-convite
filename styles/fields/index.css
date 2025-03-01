@@ -1,0 +1,29 @@
+input,
+textarea,
+select {
+  appearance: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--input-stroke);
+  padding: 0.75rem 1rem;
+  font: var(--open-md);
+  background-color: var(--input-base);
+}
+
+label {
+  font: var(--open-sm);
+  color: var(--text-body);
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 0.125rem solid var(--brand-light);
+  /* border: 0.125rem solid var(--brand-mid); */
+}
+
+.event-about .flex {
+  gap: 1rem;
+}

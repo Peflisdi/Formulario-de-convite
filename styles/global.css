@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Leckerli-font: "Leckerli One";
+  --logo-font: 400 2.5rem var(--Leckerli-font);
+
+  --baloo-font: "Baloo 2";
+  --baloo-md: 700 1.75rem var(--baloo-font);
+  --baloo-sm: 700 1.125rem var(--baloo-font);
+
+  --open-font: "Open Sans";
+  --open-md: 400 1rem var(--open-font);
+  --open-md-semibold: 600 1rem var(--open-font);
+
+  --open-sm: 400 0.875rem var(--open-font);
+  --open-sm-semibold: 600 0.875rem var(--open-font);
+
+  --open-xs: 400 0.75rem var(--open-font);
+  --open-xs-semibold: 600 0.75rem var(--open-font);
+
+  --brand-light: #59b2ff;
+  --brand-mid: #3487cf;
+  --brand-dark: #1d6fb6;
+
+  --danger: #ff5959;
+
+  --input-base: #1c1f21;
+  --input-stroke: #363b40;
+  --input-placeholder: #869198;
+
+  --shape-background: #131516;
+  --shape-body: #212427;
+  --shape-button: #2d3136;
+  --shape-hover: #383d42;
+
+  --text-body: #c8cdd0;
+  --text-heading: #f9f9f9;
+}
+
+body {
+  overflow: hidden;
+  font: var(--open-font);
+  color: var(--text-body);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text-heading);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.flex {
+  display: flex;
+}

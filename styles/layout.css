@@ -1,0 +1,67 @@
+#app {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  overflow: auto;
+  padding: 5rem;
+  background: var(--shape-body);
+
+  & .main-container {
+    max-width: 35rem;
+    margin: 0 auto;
+  }
+
+  & h1 {
+    font: var(--baloo-md);
+    color: var(--text-heading);
+    margin-bottom: 2.5rem;
+  }
+
+  & .event-cont {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+
+    & img {
+      max-width: 5%;
+    }
+  }
+
+  & span {
+    font: var(--baloo-sm);
+    color: var(--text-heading);
+  }
+}
+
+aside {
+  background: var(--shape-background);
+  display: flex;
+  align-items: center;
+
+  & .aside-container {
+    margin: 0 auto;
+    width: 90%;
+    background: url(/assets/Background.jpg) no-repeat 50% 50% / cover;
+    height: 95%;
+    border-radius: 2rem;
+  }
+
+  & header {
+    padding: 3rem;
+  }
+
+  & h2 {
+    font: var(--logo-font);
+    color: #ff598b;
+  }
+
+  & p {
+    font: var(--open-md);
+    color: var(--text-heading);
+  }
+}

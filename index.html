@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Leckerli+One&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de convite</title>
+
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
+
+<body>
+
+  <div id="app">
+    <aside>
+      <div class="aside-container">
+        <header>
+          <img src="./assets/Logo.svg" alt="">
+          <h2>Festivite</h2>
+          <p>Crie um convite digital para o seu evento</p>
+        </header>
+      </div>
+    </aside>
+
+
+    <main>
+      <div class="main-container">
+
+        <h1>Crie seu convite</h1>
+
+        <form>
+          <div class="event-cont">
+            <img src="assets/icons/calendar.svg" alt="Calendário">
+            <span>Sobre o evento</span>
+          </div>
+
+          <fieldset class="event-about">
+            <div class="input-wrapper">
+              <label for="title">Título</label>
+              <input type="text" id="title" name="title" placeholder="Nome do evento">
+            </div>
+
+            <div class="flex">
+              <div class="input-wrapper">
+                <label for="start">Início</label>
+                <input type="text" id="start" name="start" placeholder="DD/MM/AAAA, --:--">
+              </div>
+
+              <div class="input-wrapper">
+                <label for="end">Fim</label>
+                <input type="text" id="end" name="end" placeholder="DD/MM/AAAA, --:--">
+              </div>
+            </div>
+
+            <div class="flex">
+              <div class="input-wrapper">
+                <label>Tipo</label>
+
+                <div class="radio-group">
+                  <input type="radio" name="tipo" id="presencial" value="presencial" checked>
+                  <label for="presencial">
+                    <span class="icon presencial"></span> Presencial
+                  </label>
+
+                  <input type="radio" name="tipo" id="online" value="online" checked>
+                  <label for="online">
+                    <span class="icon online"></span> Online
+                  </label>
+                </div>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="local">Local</label>
+                <input type="text" id="local" name="local" placeholder="Link ou endereço">
+              </div>
+            </div>
+
+            <div class="textarea-wrapper">
+              <label for="description">Descrição</label>
+              <textarea name="description" id="description" cols="30" rows="5" placeholder="Escreva sobre os detalhes do evento"></textarea>
+            </div>
+          </fieldset>
+        </form>
+
+      </div>
+    </main>
+  </div>
+
+</body>
+
+</html>
