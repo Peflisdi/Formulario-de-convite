@@ -1,5 +1,8 @@
 @import url(fields/index.css);
 @import url(fields/radio.css);
+@import url(fields/color-styles.css);
+@import url(fields/checkbox.css);
+@import url(fields/button.css);
 
 fieldset {
   border: none;

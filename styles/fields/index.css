@@ -10,6 +10,10 @@ select {
   background-color: var(--input-base);
 }
 
+textarea {
+  resize: none;
+}
+
 label {
   font: var(--open-sm);
   color: var(--text-body);
@@ -26,4 +30,32 @@ select:focus {
 
 .event-about .flex {
   gap: 1rem;
+}
+
+.contact .flex {
+  gap: 1rem;
+}
+
+input {
+  &[required] + .error {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin-top: 0.35rem;
+  }
+  &:not(:focus):valid + .error {
+    display: none;
+  }
+  &:invalid {
+    border: 0.125rem solid var(--danger);
+  }
+}
+
+.error img {
+  max-width: 1.5rem;
+}
+
+.error span {
+  font: var(--open-xs);
+  color: var(--danger);
 }

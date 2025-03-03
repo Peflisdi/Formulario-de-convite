@@ -1,0 +1,20 @@
+.action-button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.primary {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: var(--brand-dark);
+  color: var(--text-heading);
+  font: var(--open-md);
+}
+
+.primary img {
+  max-width: 1.5rem;
+}

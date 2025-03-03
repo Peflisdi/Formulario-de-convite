@@ -1,0 +1,157 @@
+.check-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* ========== TOGGLE SWITCH ========== */
+.toggle-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  margin-bottom: 0;
+}
+
+.toggle {
+  display: none;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 999px;
+}
+
+.slider {
+  position: relative;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 999px;
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  transition: 0.3s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 1.5rem;
+  width: 1.5rem;
+  left: 0.25rem;
+  bottom: 0.2rem;
+  background-color: var(--input-stroke);
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+.toggle:checked + .slider {
+  background-color: var(--brand-light);
+}
+
+.toggle:checked + .slider::before {
+  transform: translateX(30px);
+  background-color: #fff;
+}
+
+.toggle:checked ~ .toggle-text::after {
+  content: "Claro";
+}
+
+.toggle-text::after {
+  content: "Escuro";
+}
+
+/* ========== BOTÃO DE UPLOAD ========== */
+.file-input {
+  display: none;
+}
+
+.file-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0;
+}
+
+.file-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--shape-button);
+  color: white;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.file-button:hover {
+  background-color: var(--shape-hover);
+}
+
+.file-button svg {
+  fill: white;
+}
+
+.file-name {
+  color: #888;
+  font-size: 14px;
+}
+
+/* ========== TERMOS ========== */
+.terms-cont {
+  border-top: 1px solid var(--input-stroke);
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+
+  & label {
+    margin-bottom: 0;
+
+    & a {
+      color: var(--brand-light);
+      text-decoration: underline;
+      font-weight: 600;
+    }
+  }
+}
+
+.checkbox-wrapper {
+  position: relative;
+  margin-top: 3rem;
+  & [type="checkbox"] {
+    display: none;
+  }
+
+  & input + label::before {
+    content: "";
+    vertical-align: middle;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid var(--input-stroke);
+    border-radius: 0.25rem;
+    background-color: var(--input-base);
+    display: inline-block;
+    margin-right: 0.75rem;
+    transition: 0.2s ease-in-out;
+  }
+
+  & .checkbox-image {
+    flex: 0 0 1.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 5px;
+    background-color: var(--input-base);
+    border: 1px solid var(--input-stroke);
+  }
+
+  & input:checked + label::before {
+    background-image: url(../../assets/icons/check.svg);
+    background-size: contain;
+    border: 1px solid var(--brand-light);
+  }
+}

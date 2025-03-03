@@ -50,3 +50,38 @@
   background: url(../../assets/icons/video.svg) no-repeat center;
   background-size: contain;
 }
+
+.theme-picker {
+  & .radio-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
+    gap: 1rem;
+  }
+
+  & .radio-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+  }
+
+  & img {
+    z-index: 2;
+    padding: 0.4rem;
+    border-radius: 1rem;
+    pointer-events: none;
+  }
+
+  & input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  & label {
+    z-index: 2;
+    margin-bottom: 0.65rem;
+    pointer-events: none;
+  }
+}
